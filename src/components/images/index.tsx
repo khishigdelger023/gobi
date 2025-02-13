@@ -12,7 +12,7 @@ export function Images({ images, alt }: { images: string[]; alt: string }) {
   }, [images, index]);
 
   return (
-    <section aria-label="images" className="">
+    <section aria-label="images">
       <div className="lg:grid grid-cols-2 lg:overflow-visible max-lg:hidden">
         {images.map((img, idx) => (
           <button

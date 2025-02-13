@@ -20,7 +20,7 @@ type BadgeProps = {
 const typeStyles: Record<BadgeType, string> = {
   [BadgeType.Warning]: "bg-warning text-baseContent",
   [BadgeType.Accent]: "bg-accent text-baseContent",
-  [BadgeType.Success]: "bg-success text-white",
+  [BadgeType.Success]: "bg-success text-baseContent",
   [BadgeType.Info]: "bg-teal-300 text-white",
   [BadgeType.Error]: "bg-red-500 text-white",
   [BadgeType.Primary]: "bg-primary text-white",
