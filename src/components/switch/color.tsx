@@ -1,5 +1,5 @@
+import { VariantType } from "@/app/_types";
 import cn from "classnames";
-import { VariantType } from "@/app/page";
 
 export function ColorSwitch({
   selected,
