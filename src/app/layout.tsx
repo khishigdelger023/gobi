@@ -45,11 +45,9 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
         <title></title>
       </head>
-      <body
-        className={`${geistMono.variable} antialiased text-baseContent bg-baseBG`}
-      >
+      <body className={`${geistMono.variable} antialiased text-baseContent`}>
         <Header />
-        {children}
+        <div className="bg-baseBG pb-24">{children}</div>
         <Footer />
       </body>
     </html>

@@ -1,4 +1,4 @@
-import ChevronRightIcon from "@/assets/chevron-right.svg";
+import ChevronRightIcon from "@/assets/icons/chevron-right.svg";
 
 export function Footer() {
   return (
