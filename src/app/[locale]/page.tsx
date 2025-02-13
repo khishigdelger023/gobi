@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div className='h-svh'>
-      aa
+      Product detail components
     </div>
   );
 }
