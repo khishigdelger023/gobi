@@ -12,8 +12,8 @@ export function Images({ images, alt }: { images: string[]; alt: string }) {
   }, [images, index]);
 
   return (
-    <section aria-label="images">
-      <div className="lg:grid grid-cols-2 lg:overflow-visible">
+    <section aria-label="images" className="">
+      <div className="lg:grid grid-cols-2 lg:overflow-visible max-lg:hidden">
         {images.map((img, idx) => (
           <button
             key={idx}
@@ -33,7 +33,16 @@ export function Images({ images, alt }: { images: string[]; alt: string }) {
           </button>
         ))}
       </div>
-      {/* )} */}
+      <Image
+        preview={{
+          visible: open,
+          onVisibleChange: (visible) => setOpen(visible),
+        }}
+        itemProp="image"
+        className="w-full bg-white object-contain object-center sm:rounded-lg lg:hidden"
+        src={images[0]}
+        alt={alt}
+      />
     </section>
   );
 }

@@ -7,9 +7,7 @@ export function Breadcrumb(props: BreadcrumbProps) {
   const { items, className } = props;
 
   return (
-    <div
-      className={cn("flex text-sm text-base-content max-lg:hidden", className)}
-    >
+    <div className={cn("flex text-sm text-base-content", className)}>
       {items.map((item, idx) => {
         if (!item.title) return null;
 
