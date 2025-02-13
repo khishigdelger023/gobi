@@ -1,12 +1,12 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Cormorant_Garamond } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 
 import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 
-const geistMono = Cormorant_Garamond({
+const geistMono = Open_Sans({
   variable: "--font-geist-mono",
   subsets: ["latin"],
   weight: "300",

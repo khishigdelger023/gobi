@@ -13,7 +13,7 @@ export function ColorSwitch({
   size?: "xs" | "default";
 }) {
   return (
-    <ul className={cn("flex", size === "xs" ? "space-x-2" : '"space-x-4"')}>
+    <ul className={cn("flex", size === "xs" ? "space-x-2" : "space-x-4")}>
       {variants.map((variant) => (
         <li key={variant.color}>
           <label

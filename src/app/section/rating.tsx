@@ -1,6 +1,6 @@
 import StarFilledIcon from "@/assets/icons/star-filled.svg";
 
-export function ReviewSection() {
+export function RatingSection() {
   return (
     <ul className="flex gap-2 items-center text-xs">
       {Array.from({ length: 5 }).map((_, i) => (

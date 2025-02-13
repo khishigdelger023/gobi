@@ -6,8 +6,11 @@ import {
   ColorVariantSection,
   PriceSection,
   ProductDetailSection,
-  ReviewSection,
+  RatingSection,
   SizeSection,
+  ProductsSection,
+  ArticlesSection,
+  ReviewAndCommentsSection,
 } from "./section";
 import Image1 from "@/assets/images/BG (1).png";
 import Image2 from "@/assets/images/BG (2).png";
@@ -16,9 +19,6 @@ import Image4 from "@/assets/images/BG (5).png";
 import Image5 from "@/assets/images/BG (6).png";
 import { Badge, BadgeType } from "@/components/badge";
 import { AddBagButton } from "@/components/actions/add-bag";
-import ArticlesSection from "./section/articles";
-import { SingleProductProps } from "@/components/product/_types";
-import { SingleProduct } from "@/components/product";
 
 export default function ProductPage() {
   const { images, variants, sizes } = product;
@@ -39,7 +39,7 @@ export default function ProductPage() {
           <article className="text-4xl max-lg:text-2xl text-pretty">
             Reborn Cashmere Turtle Neck with Cable Stitches
           </article>
-          <ReviewSection />
+          <RatingSection />
           <PriceSection />
           <span className="text-neutralContent text-xs">
             Inkl. MwSt. zzgl. Versandkosten
@@ -82,14 +82,8 @@ export default function ProductPage() {
         <ProductDetailSection />
       </div>
       <ArticlesSection />
-      <h3 className="text-6xl py-12 px-16 max-lg:text-3xl max-lg:py-8 max-lg:px-6">
-        We recommend
-      </h3>
-      <ul className="grid grid-cols-products_lg line-clamp-1 overflow-hidden">
-        {products.map((product) => (
-          <SingleProduct key={product.id} {...product} />
-        ))}
-      </ul>
+      <ProductsSection />
+      <ReviewAndCommentsSection />
     </>
   );
 }
@@ -135,81 +129,3 @@ export const product = {
     { name: "fit", description: "Loose fit" },
   ],
 };
-
-export const products: SingleProductProps[] = [
-  {
-    id: "1",
-    title: "Classic Cashmere Sweater",
-    image: {
-      id: "img1",
-      attachment:
-        "https://cdn.shopify.com/s/files/1/1953/2845/files/EU_CN_FW2425_Ecom_0819_EBO3266.jpg?v=1737701666",
-    },
-    price: 150.0,
-    variants: [
-      { name: "Beige", color: "bg-[#F5F5DC]" },
-      { name: "Charcoal", color: "bg-[#36454F]" },
-      { name: "Navy", color: "bg-[#000080]" },
-    ],
-  },
-  {
-    id: "2",
-    title: "V-Neck Cashmere Cardigan",
-    image: {
-      id: "img2",
-      attachment:
-        "https://cdn.shopify.com/s/files/1/1953/2845/files/EU_CN_FW2425_Ecom_0819_EBO3266.jpg?v=1737701666",
-    },
-    price: 175.0,
-    variants: [
-      { name: "Beige", color: "bg-[#F5F5DC]" },
-      { name: "Charcoal", color: "bg-[#36454F]" },
-      { name: "Navy", color: "bg-[#000080]" },
-    ],
-  },
-  {
-    id: "3",
-    title: "Cashmere Scarf",
-    image: {
-      id: "img3",
-      attachment:
-        "https://cdn.shopify.com/s/files/1/1953/2845/files/EU_CN_FW2425_Ecom_0819_EBO3266.jpg?v=1737701666",
-    },
-    price: 75.0,
-    variants: [
-      { name: "Beige", color: "bg-[#F5F5DC]" },
-      { name: "Charcoal", color: "bg-[#36454F]" },
-      { name: "Navy", color: "bg-[#000080]" },
-    ],
-  },
-  {
-    id: "4",
-    title: "Classic Cashmere Sweater",
-    image: {
-      id: "img1",
-      attachment:
-        "https://cdn.shopify.com/s/files/1/1953/2845/files/EU_CN_FW2425_Ecom_0819_EBO3266.jpg?v=1737701666",
-    },
-    price: 150.0,
-    variants: [
-      { name: "Beige", color: "bg-[#F5F5DC]" },
-      { name: "Charcoal", color: "bg-[#36454F]" },
-      { name: "Navy", color: "bg-[#000080]" },
-    ],
-  },
-  {
-    id: "5",
-    title: "V-Neck Cashmere Cardigan",
-    image: {
-      id: "img2",
-      attachment:
-        "https://cdn.shopify.com/s/files/1/1953/2845/files/EU_CN_FW2425_Ecom_0819_EBO3266.jpg?v=1737701666",
-    },
-    price: 175.0,
-    variants: [
-      { name: "Beige", color: "bg-[#F5F5DC]" },
-      { name: "Charcoal", color: "bg-[#36454F]" },
-      { name: "Navy", color: "bg-[#000080]" },
-    ],
-  },
-];

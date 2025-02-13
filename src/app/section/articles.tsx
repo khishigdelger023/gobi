@@ -3,7 +3,7 @@ import { SingleArticleList } from "@/components/article/list";
 import { SingleArticlePhoto } from "@/components/article/photo";
 import { SingleArticleCard } from "@/components/article/card";
 
-export default function ArticlesSection() {
+export function ArticlesSection() {
   return (
     <>
       <ul>
