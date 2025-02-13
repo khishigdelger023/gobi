@@ -1,4 +1,4 @@
-import { product } from "../page";
+import { product } from "@/components/_types";
 
 export function ProductDetailSection() {
   return (
