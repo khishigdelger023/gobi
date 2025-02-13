@@ -16,8 +16,7 @@ import {
 
 import { Badge, BadgeType } from "@/components/badge";
 import { AddBagButton } from "@/components/actions/add-bag";
-import { ProductType } from "./_types";
-
+import { ProductType } from "@/components/_types";
 
 export const ProductPageClient = ({ product }: { product: ProductType }) => {
   const { images, variants, sizes } = product;

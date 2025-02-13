@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { VariantType } from "../page";
 import { ColorSwitch } from "@/components/switch/color";
+import { VariantType } from "@/components/_types";
 
 export function ColorVariantSection({ variants }: { variants: VariantType[] }) {
   const [selectedVariant, setSelectedVariant] = useState(variants[0]);
