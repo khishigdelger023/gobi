@@ -23,16 +23,18 @@ export function ArticlesSection() {
           </li>
         ))}
       </ul>
-      <SingleArticleCard
-        id={"aaa "}
-        image={{
-          id: "a",
-          attachment:
-            "https://media.istockphoto.com/id/1324413691/photo/beautiful-sky-with-white-clouds.jpg?s=2048x2048&w=is&k=20&c=qyCqwwp5JfDp3uoIK5zxly6P8dmu_s2YvhtMK7UONbw=",
-        }}
-        title="Reborn Cashmere"
-        preview="Our CashmeReborn Collection uses cashmere yarn manufactured from recycled yarn spinning waste to cut down on material waste and advance circularity. Compared to cashmere generated from raw fiber, reborn cashmere requires 31% less energy, 13% less water, and 16% less product dye to produce."
-      />
+      <div id="cashmere_reborn">
+        <SingleArticleCard
+          id={"aaa "}
+          image={{
+            id: "a",
+            attachment:
+              "https://media.istockphoto.com/id/1324413691/photo/beautiful-sky-with-white-clouds.jpg?s=2048x2048&w=is&k=20&c=qyCqwwp5JfDp3uoIK5zxly6P8dmu_s2YvhtMK7UONbw=",
+          }}
+          title="Reborn Cashmere"
+          preview="Our CashmeReborn Collection uses cashmere yarn manufactured from recycled yarn spinning waste to cut down on material waste and advance circularity. Compared to cashmere generated from raw fiber, reborn cashmere requires 31% less energy, 13% less water, and 16% less product dye to produce."
+        />
+      </div>
     </>
   );
 }

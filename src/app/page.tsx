@@ -46,9 +46,12 @@ export default function ProductPage() {
           </span>
           <div className="flex gap-4 text-xs">
             <Badge text="This is Promo Text" />
-            <button className="bg-secondary text-white px-2 py-1 rounded">
+            <Link
+              href="#cashmere_reborn"
+              className="bg-secondary text-white px-2 py-1 rounded transition-transform hover:scale-105"
+            >
               CashmereReborn &#8595;
-            </button>
+            </Link>
           </div>
           <ColorVariantSection variants={variants} />
           <SizeSection sizes={sizes} />
