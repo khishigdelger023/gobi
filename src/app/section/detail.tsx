@@ -7,7 +7,7 @@ export function ProductDetailSection() {
         <h6 className="uppercase text-xs">Description</h6>
         <p className="text-3xl max-lg:text-2xl">{product.description}</p>
       </section>
-      <section className="space-y-4 lg:p-20 max-lg:p-6">
+      <section className="space-y-4 lg:py-20 max-lg:p-6">
         <h6 className="uppercase text-xs">Details</h6>
         <ul>
           {product.productDetails.map((detail, idx) => (
